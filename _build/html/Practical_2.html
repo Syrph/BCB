@@ -361,7 +361,7 @@ To load the package <code class="docutils literal notranslate"><span class="pre"
 <span class="nf">text</span><span class="p">(</span><span class="m">-0.6</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="s">&quot;Tip&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="bg-primary reference internal image-reference" href="_images/Practical_2_9_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_9_0.png" style="width: 200px;" /></a>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_9_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_9_0.png" style="width: 600px;" /></a>
 <p>When we select a node to act as the base of a tree, the tree is said to be <strong>rooted</strong>. At the bottom of a tree, is the <strong>root node</strong> (or simply the <strong>root</strong>).</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also read in trees directly from text by specifying the branch lengths after each node/tip. More info below!</span>
 <span class="n">tree</span> <span class="o">&lt;-</span> <span class="nf">read.tree</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="s">&quot;(((Homo:1, Pan:1):1, Gorilla:1):1, Pongo:1);&quot;</span><span class="p">)</span>
@@ -373,7 +373,7 @@ To load the package <code class="docutils literal notranslate"><span class="pre"
 <span class="nf">text</span><span class="p">(</span><span class="m">0.5</span><span class="p">,</span> <span class="m">3.18</span><span class="p">,</span> <span class="s">&quot;Root&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="plot" src="_images/Practical_2_11_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_11_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_11_0.png" style="width: 600px;" /></a>
 <p>Phylogenetic trees of the kind shown above are fairly simple and lack information about time or character changes occurring along a branch. We can assign branch length in the form of either time or the amount of change/substitution along a branch. A tree with <strong>branch lengths</strong> depicted can be called a <strong>phylogram</strong>.</p>
 <p>When (an implied) dimension of time is being considered, all the tips of the tree must be at the level representing the time in which they are observed. For trees where all the species are extant, the tips are flush at the top. This representation is called an <strong>ultrametric</strong> tree.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">tree</span> <span class="o">&lt;-</span> <span class="nf">read.tree</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="s">&quot;(((Homo:6.3, Pan:6.3):2.5, Gorilla:8.8):6.9, Pongo:15.7);&quot;</span><span class="p">)</span>
@@ -381,7 +381,7 @@ To load the package <code class="docutils literal notranslate"><span class="pre"
 <span class="nf">axisPhylo</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_13_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="Practical_2_13_0.png"><img alt="plot" class="bg-primary align-center" src="Practical_2_13_0.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="b-informatic-representations-of-tree">
 <h3>B. Informatic representations of tree<a class="headerlink" href="#b-informatic-representations-of-tree" title="Permalink to this headline">¶</a></h3>
@@ -436,7 +436,7 @@ You can open it with a simple text editor to see the newick tree structure.</p>
 <span class="nf">nodelabels</span><span class="p">()</span> <span class="p">;</span> <span class="nf">tiplabels</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_15_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_15_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_15_0.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="records-pointers">
 <h3>Records &amp; pointers<a class="headerlink" href="#records-pointers" title="Permalink to this headline">¶</a></h3>
@@ -580,13 +580,13 @@ Note that we can just use the function <code class="docutils literal notranslate
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">fishtree</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_37_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_37_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_37_0.png" style="width: 600px;" /></a>
 <p><code class="docutils literal notranslate"><span class="pre">cex</span> <span class="pre">=</span> <span class="pre">0.5</span></code> reduces the size of the tip labels so we can read them.</p>
 <p>We can also zoom into different sections of the tree that you’re interested in:</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">zoom</span><span class="p">(</span><span class="n">fishtree</span><span class="p">,</span> <span class="nf">grep</span><span class="p">(</span><span class="s">&quot;Gymnothorax&quot;</span><span class="p">,</span> <span class="n">fishtree</span><span class="o">$</span><span class="n">tip.label</span><span class="p">),</span> <span class="n">subtree</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_39_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_39_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_39_0.png" style="width: 600px;" /></a>
 <p>The <code class="docutils literal notranslate"><span class="pre">grep</span></code> function is a generic function in <code class="docutils literal notranslate"><span class="pre">R</span></code> that allows to <em>grab</em> any element in an object containing the desired characters.
 In this example, <code class="docutils literal notranslate"><span class="pre">grep</span></code> is going to search for all the elements in <code class="docutils literal notranslate"><span class="pre">fishtree$tip.label</span></code> that contains <code class="docutils literal notranslate"><span class="pre">Gymnothorax</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">Gymnothorax_kidako</span></code>, <code class="docutils literal notranslate"><span class="pre">Gymnothorax_reticularis</span></code>).
 Try using only <code class="docutils literal notranslate"><span class="pre">grep(&quot;thorax&quot;,</span> <span class="pre">fishtree$tip.label)</span></code> to see if it also only selects the members of the <em>Gymnothorax</em> genus.</p>
@@ -594,7 +594,7 @@ Try using only <code class="docutils literal notranslate"><span class="pre">grep
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">zoom</span><span class="p">(</span><span class="n">fishtree</span><span class="p">,</span> <span class="nf">grep</span><span class="p">(</span><span class="s">&quot;Gymnothorax&quot;</span><span class="p">,</span> <span class="n">fishtree</span><span class="o">$</span><span class="n">tip.label</span><span class="p">),</span> <span class="n">subtree</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_41_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_41_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_41_0.png" style="width: 600px;" /></a>
 <p>Note that <code class="docutils literal notranslate"><span class="pre">zoom</span></code> is a specific plotting function that will automatically set the plotting window to display two plots at once. This might create some conflicts if you’re using RStudio. The bug can be easily solved though by typing <code class="docutils literal notranslate"><span class="pre">dev.off()</span></code> to reinitialise the plotting window and then proceed to the normal <code class="docutils literal notranslate"><span class="pre">zoom(...)</span></code> function as written above.</p>
 <p>You can also reset this to one plot only per window by using:</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
@@ -610,12 +610,12 @@ Here’s an fun/hideous example!</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">fishtree</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;unrooted&quot;</span><span class="p">,</span> <span class="n">edge.color</span> <span class="o">=</span> <span class="s">&quot;deeppink&quot;</span><span class="p">,</span> <span class="n">tip.color</span> <span class="o">=</span> <span class="s">&quot;springgreen&quot;</span><span class="p">,</span>  <span class="n">cex</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_47_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_47_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_47_0.png" style="width: 600px;" /></a>
 <p>Or try</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="nf">ladderize</span><span class="p">(</span><span class="n">fishtree</span><span class="p">),</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;c&quot;</span><span class="p">,</span> <span class="n">edge.color</span> <span class="o">=</span> <span class="s">&quot;darkviolet&quot;</span><span class="p">,</span> <span class="n">tip.color</span> <span class="o">=</span> <span class="s">&quot;hotpink&quot;</span><span class="p">,</span>  <span class="n">cex</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_49_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_49_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_49_0.png" style="width: 600px;" /></a>
 <p>The <code class="docutils literal notranslate"><span class="pre">ladderize</span></code> function allows to display the branches from shortest to longest.</p>
 <blockquote>
 <div><p>Try to modify the graphical options (colors, display, size, ordering of the nodes, etc.) to obtain the most beautiful or ugliest Elopomorpha phylogeny!</p>
@@ -632,7 +632,7 @@ Here’s an fun/hideous example!</p>
 <span class="nf">plotTree</span><span class="p">(</span><span class="n">Ran_Turdidae_tree</span><span class="p">,</span><span class="n">type</span><span class="o">=</span><span class="s">&quot;fan&quot;</span><span class="p">,</span><span class="n">fsize</span><span class="o">=</span><span class="m">0.4</span><span class="p">,</span><span class="n">lwd</span><span class="o">=</span><span class="m">0.5</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_55_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_55_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_55_0.png" style="width: 600px;" /></a>
 <p>First, lets see what species are in the tree.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">Ran_Turdidae_tree</span><span class="o">$</span><span class="n">tip.label</span>
 </pre></div>
@@ -667,7 +667,7 @@ Here’s an fun/hideous example!</p>
 <span class="nf">plotTree</span><span class="p">(</span><span class="n">Ran_Turdidae_tree_NM</span><span class="p">,</span><span class="n">type</span><span class="o">=</span><span class="s">&quot;fan&quot;</span><span class="p">,</span><span class="n">fsize</span><span class="o">=</span><span class="m">0.4</span><span class="p">,</span><span class="n">lwd</span><span class="o">=</span><span class="m">0.5</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_61_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_61_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_61_0.png" style="width: 600px;" /></a>
 <p>Alternatively, lets say we want to extract the clade within the tree that includes the pre identified selected range of species.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set diff will find all the tips that don&#39;t match drop.species, and then drop.tip will remove them</span>
 <span class="n">pruned_birdtree</span><span class="o">&lt;-</span><span class="nf">drop.tip</span><span class="p">(</span><span class="n">Ran_Turdidae_tree</span><span class="p">,</span>
@@ -675,7 +675,7 @@ Here’s an fun/hideous example!</p>
 <span class="nf">plotTree</span><span class="p">(</span><span class="n">pruned_birdtree</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_63_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_63_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_63_0.png" style="width: 600px;" /></a>
 <p><strong>Remember, always to save your new revised tree. As this will save you time from having to prune it everytime. Use <code class="docutils literal notranslate"><span class="pre">write.tree</span></code> or <code class="docutils literal notranslate"><span class="pre">write.nexus</span></code> the same as you would to save a dataframe.</strong></p>
 <p>For some analyses, you might want to work with on a genus level tree. This can easily be done by a few key steps. We can do this using base <code class="docutils literal notranslate"><span class="pre">R</span></code>, but we’ll use some packages from the <code class="docutils literal notranslate"><span class="pre">tidyverse</span></code> that have some very useful functions.
 First load <code class="docutils literal notranslate"><span class="pre">stringr</span></code> (for manipulating strings) and <code class="docutils literal notranslate"><span class="pre">dplyr</span></code> (for manipulating dataframes). You’ll see that it masks functions from other packages like stats. If you need those functions you can use code like this: <code class="docutils literal notranslate"><span class="pre">stats::filter()</span></code> to specify the package you want.</p>
@@ -740,25 +740,36 @@ First load <code class="docutils literal notranslate"><span class="pre">stringr<
 <span class="nf">plotTree</span><span class="p">(</span><span class="n">genera_tree</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="_images/Pratical_2_68_0.png" /></p>
-<p>As the tree has dropped all but one species per genus, this means we will finally need to also rename the tip labels as well to reflect this change.</p>
-<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># It&#39;s definitely worth checking that the labels match up properly when you change tip labels</span>
-<span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
-<span class="nf">plotTree</span><span class="p">(</span><span class="n">genera_tree</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
+<p>![png](_images/Pratical_2_68_0.png
+:alt: plot
+:class: bg-primary
+:width: 600px
+:align: center</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 
-<span class="c1"># Swap species names for genera</span>
-<span class="n">genera_tree</span><span class="o">$</span><span class="n">tip.label</span><span class="o">&lt;-</span> <span class="n">bird_genera</span><span class="o">$</span><span class="n">Genus</span>
-<span class="nf">plotTree</span><span class="p">(</span><span class="n">genera_tree</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
+
+As the tree has dropped all but one species per genus, this means we will finally need to also rename the tip labels as well to reflect this change.
+
+
+
+```R
+# It&#39;s definitely worth checking that the labels match up properly when you change tip labels
+par(mfrow=c(1,2))
+plotTree(genera_tree,ftype=&quot;i&quot;)
+
+# Swap species names for genera
+genera_tree$tip.label&lt;- bird_genera$Genus
+plotTree(genera_tree,ftype=&quot;i&quot;)
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_70_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_70_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_70_0.png" style="width: 600px;" /></a>
 <p>It is important to note, that a big limitation with this approach is that by selecting only one species per genus to keep, that you may run the risk of unintentially dropping tips of species that are paraphyletic. For example, Zoothera genus is spread throughout Turdidae tree.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">plotTree</span><span class="p">(</span><span class="n">Ran_Turdidae_tree</span><span class="p">,</span><span class="n">fsize</span><span class="o">=</span><span class="m">0.2</span><span class="p">,</span><span class="n">lwd</span><span class="o">=</span><span class="m">0.2</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 <span class="nf">zoom</span><span class="p">(</span><span class="n">Ran_Turdidae_tree</span><span class="p">,</span> <span class="nf">grep</span><span class="p">(</span><span class="s">&quot;Zoothera&quot;</span><span class="p">,</span> <span class="n">Ran_Turdidae_tree</span><span class="o">$</span><span class="n">tip.label</span><span class="p">),</span> <span class="n">subtree</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_72_0.png" /></p>
-<p><img alt="png" src="Pratical_2_72_1.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_72_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_72_0.png" style="width: 600px;" /></a>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_72_1.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_72_1.png" style="width: 600px;" /></a>
 <p>This means that when collapsing a phylogenetic tree you run the risk of miss representing the relationship between the different genera. The only way to get round this is by:</p>
 <p>a) making sure check to see how paraphyletic your tree is at the start; this can be done more easily by uploading and viewing your tree file &#64; https://itol.embl.de/.
 b) Renaming your conflicting paraphyletic clades within your phylogeny, by altering the individual species names.</p>
@@ -845,7 +856,7 @@ Load in the data:</p>
 <span class="nf">plotTree</span><span class="p">(</span><span class="n">turdi_tree</span><span class="p">,</span><span class="n">ftype</span><span class="o">=</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_86_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_86_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_86_0.png" style="width: 600px;" /></a>
 <p>Now lets try using ggtree to plot our data with our phylogeny. First we need to install <code class="docutils literal notranslate"><span class="pre">ggtree</span></code>. This package was intentionally left out of the ‘install.R’ script. Because not all packages are available from <code class="docutils literal notranslate"><span class="pre">CRAN</span></code> directly through <code class="docutils literal notranslate"><span class="pre">R</span></code>, we’ll install <code class="docutils literal notranslate"><span class="pre">BiocManager</span></code>. <code class="docutils literal notranslate"><span class="pre">devtools</span></code> is another great package for installing packages from github.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;BiocManager&quot;</span><span class="p">)</span>
 <span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">&quot;ggtree&quot;</span><span class="p">)</span>
@@ -873,7 +884,7 @@ Old packages: &#39;lubridate&#39;, &#39;magrittr&#39;, &#39;rprojroot&#39;, &#39
 <span class="n">turdidae_plot</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_91_0.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_91_0.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_91_0.png" style="width: 600px;" /></a>
 <p>Now we’ll create a simple one column dataframe with just the habitat data to plot and the species names as row names.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">habitat_data</span> <span class="o">&lt;-</span> <span class="nf">as.data.frame</span><span class="p">(</span><span class="n">turdidae_data</span><span class="p">[,</span><span class="m">2</span><span class="p">])</span>
 <span class="nf">rownames</span><span class="p">(</span><span class="n">habitat_data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">turdidae_data</span><span class="o">$</span><span class="n">Jetz_Name</span>
@@ -903,7 +914,7 @@ Scale for &#39;fill&#39; is already present. Adding another scale for &#39;fill&
 will replace the existing scale.
 </pre></div>
 </div>
-<p><img alt="png" src="Pratical_2_95_1.png" /></p>
+<a class="bg-primary reference internal image-reference" href="_images/Practical_2_95_1.png"><img alt="plot" class="bg-primary align-center" src="_images/Practical_2_95_1.png" style="width: 600px;" /></a>
 <p>And now we have a plot where we can see the spread of habitat types in Thrushes. Try experimenting with different colours and sizes to create some beautiful trees that put this one to shame! There’s also lots of other ways you can label trees. For more info this guide is a great place to start:
 https://4va.github.io/biodatasci/r-ggtree.html#the_ggtree_package</p>
 <blockquote>
