@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics in R &#8212; My Jupyter Book</title>
+    <title>Basics in R &#8212; Biodiversity and Conservation Biology</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -78,7 +78,7 @@
 <a class="navbar-brand text-wrap" href="index.html">
   
   
-  <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+  <h1 class="site-logo" id="site-title">Biodiversity and Conservation Biology</h1>
   
 </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -666,13 +666,13 @@
 <span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">pch</span><span class="o">=</span><span class="m">16</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&quot;My plot&quot;</span><span class="p">,</span> <span class="n">xlab</span><span class="o">=</span><span class="s">&quot;x values&quot;</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s">&quot;y values&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_43_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_43_0.png" /></p>
 <p><code class="docutils literal notranslate"><span class="pre">pch</span></code> stands for ‘point character’ and is the symbol to denote values. Try changing it to other values!</p>
 <p>You can also get R to plot the scatter plot as a single line using <code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">&quot;l&quot;</span></code></p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&quot;My plot&quot;</span><span class="p">,</span> <span class="n">xlab</span><span class="o">=</span><span class="s">&quot;x values&quot;</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s">&quot;y values&quot;</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;l&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_45_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_45_0.png" /></p>
 <p>Some of the most useful plots for visualling the spread of data are histograms and density plots. R comes built in with functions for sampling distributions we can use for plots.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sample fifty points randomly from a normal distribution (try taking more or less samples to create smoother curves)</span>
 <span class="n">normal.distribution</span> <span class="o">&lt;-</span><span class="nf">rnorm</span><span class="p">(</span><span class="m">50</span><span class="p">)</span>
@@ -684,15 +684,15 @@
 <span class="nf">plot</span><span class="p">(</span><span class="nf">density</span><span class="p">(</span><span class="n">normal.distribution</span><span class="p">),</span> <span class="n">main</span> <span class="o">=</span> <span class="s">&quot;My distribution&quot;</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s">&quot;sample value&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_47_0.png" /></p>
-<p><img alt="png" src="Practical_1_47_1.png" /></p>
+<p><img alt="png" src="_images/Practical_1_47_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_47_1.png" /></p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can change the grapical parameters to plot graphs side by side</span>
 <span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">normal.distribution</span><span class="p">,</span> <span class="n">main</span> <span class="o">=</span> <span class="s">&quot;My histogram&quot;</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s">&quot;sample value&quot;</span><span class="p">)</span>
 <span class="nf">plot</span><span class="p">(</span><span class="nf">density</span><span class="p">(</span><span class="n">normal.distribution</span><span class="p">),</span> <span class="n">main</span> <span class="o">=</span> <span class="s">&quot;My distribution&quot;</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s">&quot;sample value&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_48_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_48_0.png" /></p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># To reset your graph parameters to the default, simply turn off the open graphical device</span>
 <span class="nf">dev.off</span><span class="p">()</span>
 </pre></div>
@@ -779,7 +779,7 @@ values     : 0, 9916  (min, max)
 <span class="nf">plot</span><span class="p">(</span><span class="n">bio</span><span class="p">[[</span><span class="m">12</span><span class="p">]],</span> <span class="n">col</span><span class="o">=</span><span class="n">rainbow_colours</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_57_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_57_0.png" /></p>
 <p>You can also create blank rasters of the desired extent and resolution. The following code creates a raster of the same extent and resolution as the precipitation raster. We can also assign values to the cells, such as 0 in this case.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a blank raster</span>
 <span class="n">blank_raster</span> <span class="o">&lt;-</span> <span class="nf">raster</span><span class="p">(</span><span class="n">res</span><span class="o">=</span><span class="m">0.1666667</span><span class="p">,</span><span class="n">xmn</span><span class="o">=</span><span class="m">-180</span><span class="p">,</span><span class="n">xmx</span><span class="o">=</span><span class="m">180</span><span class="p">,</span><span class="n">ymn</span><span class="o">=</span><span class="m">-60</span><span class="p">,</span><span class="n">ymx</span><span class="o">=</span><span class="m">90</span><span class="p">,</span>
@@ -822,7 +822,7 @@ names       : GID_0, NAME_0
 value       :   EGY,  Egypt 
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_61_1.png" /></p>
+<p><img alt="png" src="_images/Practical_1_61_1.png" /></p>
 <p>Now we can crop our rainfall layer to just Egypt.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crop precipitation raster to just show Egypt</span>
 <span class="n">Egypt_rain</span> <span class="o">&lt;-</span> <span class="nf">crop</span><span class="p">(</span><span class="n">bio</span><span class="p">[[</span><span class="m">12</span><span class="p">]],</span> <span class="n">Egypt</span><span class="p">)</span> 
@@ -831,7 +831,7 @@ value       :   EGY,  Egypt
 <span class="nf">plot</span><span class="p">(</span><span class="n">Egypt_rain</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_63_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_63_0.png" /></p>
 <p>If you want to make the resolution higher, download the bioclim variables again and change the resolution.</p>
 <p>Next we will use IUCN range maps (IUCN 2015) to look at species richness. This example is from the package letsR (Vilela, Villalobos &amp; Poisot 2015). This example uses IUCN data available the frog genus Phyllomedusa.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the library letsR</span>
@@ -881,7 +881,7 @@ max values  : Phyllomedusa ayeaye,        1,      1,        1
 <span class="nf">plot</span><span class="p">(</span><span class="n">P_ayeaye_presab</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_69_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_69_0.png" /></p>
 <p>Phyllomedusa ayeaye has a tiny range! If we want to make a more impressive map, we can use data on all 32 species to create a map of species richness.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run the function with the spatialpolygon dataframe of all 32 species.</span>
 <span class="n">species_richness</span> <span class="o">&lt;-</span> <span class="nf">lets.presab</span><span class="p">(</span><span class="n">Phyllomedusa</span><span class="p">,</span> <span class="n">xmn</span><span class="o">=</span><span class="m">-90</span><span class="p">,</span> <span class="n">xmx</span><span class="o">=</span><span class="m">-20</span><span class="p">,</span> <span class="n">ymn</span><span class="o">=</span><span class="m">-50</span><span class="p">,</span> <span class="n">ymx</span><span class="o">=</span><span class="m">20</span><span class="p">,</span> <span class="n">resol</span><span class="o">=</span><span class="m">1</span><span class="p">)</span>
@@ -890,7 +890,7 @@ max values  : Phyllomedusa ayeaye,        1,      1,        1
 <span class="nf">plot</span><span class="p">(</span><span class="n">species_richness</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="png" src="Practical_1_71_0.png" /></p>
+<p><img alt="png" src="_images/Practical_1_71_0.png" /></p>
 <p>Of course, you can play around with plot settings to create some impressive maps!</p>
 </div>
 <div class="section" id="using-the-tidyverse">
